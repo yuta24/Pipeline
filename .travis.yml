@@ -1,0 +1,13 @@
+notifications:
+  email: false
+
+language: swift
+
+os: osx
+osx_image: xcode10.2
+xcode_workspace: Pipeline.xcworkspace
+xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone XS
+
+matrix:
+  include:
+    - xcode_scheme: PipelineTests
