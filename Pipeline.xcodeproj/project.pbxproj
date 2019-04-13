@@ -8,7 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		2BEA500822616D610028D523 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA500722616D610028D523 /* Pipeline.swift */; };
+		2BEA500F22616FFE0028D523 /* Precedencegroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA500E22616FFE0028D523 /* Precedencegroups.swift */; };
+		2BEA5011226172510028D523 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA5010226172510028D523 /* Pipe.swift */; };
+		2BEA5013226172A90028D523 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA5012226172A90028D523 /* Errors.swift */; };
+		2BEA5015226172C90028D523 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA5014226172C90028D523 /* Either.swift */; };
+		2BEA5018226173880028D523 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA5017226173880028D523 /* Result+Extension.swift */; };
+		2BEA50222261783B0028D523 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA50212261783B0028D523 /* PipelineTests.swift */; };
+		2BEA50242261783B0028D523 /* libPipeline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEA500422616D610028D523 /* libPipeline.a */; };
+		2BEA502B226181940028D523 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA502A226181940028D523 /* Curry.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BEA50252261783B0028D523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BEA4FFC22616D610028D523 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BEA500322616D610028D523;
+			remoteInfo = Pipeline;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2BEA500222616D610028D523 /* CopyFiles */ = {
@@ -25,6 +43,15 @@
 /* Begin PBXFileReference section */
 		2BEA500422616D610028D523 /* libPipeline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPipeline.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEA500722616D610028D523 /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		2BEA500E22616FFE0028D523 /* Precedencegroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Precedencegroups.swift; sourceTree = "<group>"; };
+		2BEA5010226172510028D523 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		2BEA5012226172A90028D523 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		2BEA5014226172C90028D523 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		2BEA5017226173880028D523 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
+		2BEA501F2261783B0028D523 /* PipelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEA50212261783B0028D523 /* PipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineTests.swift; sourceTree = "<group>"; };
+		2BEA50232261783B0028D523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEA502A226181940028D523 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +62,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2BEA501C2261783B0028D523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEA50242261783B0028D523 /* libPipeline.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				2BEA500622616D610028D523 /* Pipeline */,
+				2BEA50202261783B0028D523 /* PipelineTests */,
 				2BEA500522616D610028D523 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				2BEA500422616D610028D523 /* libPipeline.a */,
+				2BEA501F2261783B0028D523 /* PipelineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +94,32 @@
 		2BEA500622616D610028D523 /* Pipeline */ = {
 			isa = PBXGroup;
 			children = (
+				2BEA5016226173780028D523 /* Extensions */,
 				2BEA500722616D610028D523 /* Pipeline.swift */,
+				2BEA500E22616FFE0028D523 /* Precedencegroups.swift */,
+				2BEA5010226172510028D523 /* Pipe.swift */,
+				2BEA5012226172A90028D523 /* Errors.swift */,
+				2BEA5014226172C90028D523 /* Either.swift */,
+				2BEA502A226181940028D523 /* Curry.swift */,
 			);
 			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		2BEA5016226173780028D523 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BEA5017226173880028D523 /* Result+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2BEA50202261783B0028D523 /* PipelineTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BEA50212261783B0028D523 /* PipelineTests.swift */,
+				2BEA50232261783B0028D523 /* Info.plist */,
+			);
+			path = PipelineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +142,24 @@
 			productReference = 2BEA500422616D610028D523 /* libPipeline.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		2BEA501E2261783B0028D523 /* PipelineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEA50292261783B0028D523 /* Build configuration list for PBXNativeTarget "PipelineTests" */;
+			buildPhases = (
+				2BEA501B2261783B0028D523 /* Sources */,
+				2BEA501C2261783B0028D523 /* Frameworks */,
+				2BEA501D2261783B0028D523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BEA50262261783B0028D523 /* PBXTargetDependency */,
+			);
+			name = PipelineTests;
+			productName = PipelineTests;
+			productReference = 2BEA501F2261783B0028D523 /* PipelineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +171,9 @@
 				ORGANIZATIONNAME = "Yu Tawata";
 				TargetAttributes = {
 					2BEA500322616D610028D523 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					2BEA501E2261783B0028D523 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -110,20 +191,53 @@
 			projectRoot = "";
 			targets = (
 				2BEA500322616D610028D523 /* Pipeline */,
+				2BEA501E2261783B0028D523 /* PipelineTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BEA501D2261783B0028D523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BEA500022616D610028D523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEA5018226173880028D523 /* Result+Extension.swift in Sources */,
+				2BEA5013226172A90028D523 /* Errors.swift in Sources */,
+				2BEA5011226172510028D523 /* Pipe.swift in Sources */,
 				2BEA500822616D610028D523 /* Pipeline.swift in Sources */,
+				2BEA502B226181940028D523 /* Curry.swift in Sources */,
+				2BEA500F22616FFE0028D523 /* Precedencegroups.swift in Sources */,
+				2BEA5015226172C90028D523 /* Either.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEA501B2261783B0028D523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEA50222261783B0028D523 /* PipelineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BEA50262261783B0028D523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BEA500322616D610028D523 /* Pipeline */;
+			targetProxy = 2BEA50252261783B0028D523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2BEA500922616D610028D523 /* Debug */ = {
@@ -268,6 +382,42 @@
 			};
 			name = Release;
 		};
+		2BEA50272261783B0028D523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PS98BD6732;
+				INFOPLIST_FILE = PipelineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bivre.PipelineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BEA50282261783B0028D523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PS98BD6732;
+				INFOPLIST_FILE = PipelineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bivre.PipelineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -285,6 +435,15 @@
 			buildConfigurations = (
 				2BEA500C22616D610028D523 /* Debug */,
 				2BEA500D22616D610028D523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BEA50292261783B0028D523 /* Build configuration list for PBXNativeTarget "PipelineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEA50272261783B0028D523 /* Debug */,
+				2BEA50282261783B0028D523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
