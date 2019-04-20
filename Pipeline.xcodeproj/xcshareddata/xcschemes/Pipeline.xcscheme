@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2BEA500322616D610028D523"
-               BuildableName = "libPipeline.a"
+               BlueprintIdentifier = "2B9829E8226AF04B0044561E"
+               BuildableName = "Pipeline.framework"
                BlueprintName = "Pipeline"
                ReferencedContainer = "container:Pipeline.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2BEA500322616D610028D523"
-            BuildableName = "libPipeline.a"
+            BlueprintIdentifier = "2B9829E8226AF04B0044561E"
+            BuildableName = "Pipeline.framework"
             BlueprintName = "Pipeline"
             ReferencedContainer = "container:Pipeline.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2BEA500322616D610028D523"
-            BuildableName = "libPipeline.a"
+            BlueprintIdentifier = "2B9829E8226AF04B0044561E"
+            BuildableName = "Pipeline.framework"
             BlueprintName = "Pipeline"
             ReferencedContainer = "container:Pipeline.xcodeproj">
          </BuildableReference>

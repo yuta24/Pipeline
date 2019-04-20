@@ -14,7 +14,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2BEA501E2261783B0028D523"
+               BlueprintIdentifier = "2B9829F0226AF04B0044561E"
                BuildableName = "PipelineTests.xctest"
                BlueprintName = "PipelineTests"
                ReferencedContainer = "container:Pipeline.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2BEA501E2261783B0028D523"
+               BlueprintIdentifier = "2B9829F0226AF04B0044561E"
                BuildableName = "PipelineTests.xctest"
                BlueprintName = "PipelineTests"
                ReferencedContainer = "container:Pipeline.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2BEA501E2261783B0028D523"
+            BlueprintIdentifier = "2B9829F0226AF04B0044561E"
             BuildableName = "PipelineTests.xctest"
             BlueprintName = "PipelineTests"
             ReferencedContainer = "container:Pipeline.xcodeproj">
@@ -73,7 +73,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2BEA501E2261783B0028D523"
+            BlueprintIdentifier = "2B9829F0226AF04B0044561E"
             BuildableName = "PipelineTests.xctest"
             BlueprintName = "PipelineTests"
             ReferencedContainer = "container:Pipeline.xcodeproj">
