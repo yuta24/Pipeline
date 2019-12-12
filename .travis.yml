@@ -4,10 +4,6 @@ notifications:
 language: swift
 
 os: osx
-osx_image: xcode10.2
-xcode_project: Pipeline.xcodeproj
-xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone XS
+osx_image: xcode11.2
 
-matrix:
-  include:
-    - xcode_scheme: PipelineTests
+script: swift buiild
